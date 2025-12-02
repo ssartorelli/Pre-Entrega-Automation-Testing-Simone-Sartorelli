@@ -1,0 +1,3 @@
+INFO:root:Configuracion del logger
+INFO:root:Pruebas para la API JSONPlaceholder
+INFO:root:TEST 1 - GET - Obtener todos los posts
