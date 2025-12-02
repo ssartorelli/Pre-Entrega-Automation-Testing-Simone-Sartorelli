@@ -9,8 +9,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import os
 URL = "https://www.saucedemo.com/"
-USERNAME = "standard_user"
-PASSWORD = "secret_sauce"
+#USERNAME = "standard_user"
+#PASSWORD = "secret_sauce"
 
 def get_driver():
     #options = Options()
@@ -23,15 +23,15 @@ def get_driver():
     return driver
     #driver = webdriver.Chrome(service=service, options=options)
 
-#def login_saucedemo(driver):
+def login_saucedemo(driver):
     
     driver.get(URL)
 
-    #WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "user-name"))).send_keys(USERNAME)
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "user-name"))).send_keys(USERNAME)
     driver.find_element(By.NAME,"user-name").send_keys(USERNAME)
     driver.find_element(By.NAME, "password").send_keys(PASSWORD)
     driver.find_element(By.ID, "login-button").click()
-    time.sleep(7)
+    #time.sleep(7)
     
 
 def get_file_path(file_name, folder="data"):

@@ -10,3 +10,5 @@ def test_inventory(driver):
     time.sleep(5)
     inventory.is_at_page()
     inventory.logout()
+    assert "https://www.saucedemo.com/" in driver.current_url
+    time.sleep(5)

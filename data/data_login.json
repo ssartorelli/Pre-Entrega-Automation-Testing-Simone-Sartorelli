@@ -1,0 +1,12 @@
+[{"username": "standart_user",
+"password": "secret_sauce",
+"login_example": true},
+
+
+{"username": "locked_out_user",
+"password": "secret_sauce",
+"login_example": false},
+
+{"username": "problem_user",
+"password": "secret_sauce",
+"login_example": true}]

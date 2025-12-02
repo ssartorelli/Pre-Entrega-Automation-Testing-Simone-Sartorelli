@@ -1,4 +1,4 @@
-from utils.helpers import URL
+from utils.helpers import URL, PASSWORD, USERNAME
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -14,7 +14,7 @@ class LoginPage:
     def open(self):
         self.driver.get(URL)
 
-    def login(self, username,password):
+    def login(self, username=USERNAME,password=PASSWORD):
         WebDriverWait(self.driver,5).until(EC.element_to_be_clickable((self._INPUT_NAME))).send_keys(username)
         WebDriverWait(self.driver,5).until(EC.element_to_be_clickable((self._INPUT_PASSWORD))).send_keys(password)
         WebDriverWait(self.driver,5).until(EC.element_to_be_clickable((self._LOGIN_BUTTON))).click()
