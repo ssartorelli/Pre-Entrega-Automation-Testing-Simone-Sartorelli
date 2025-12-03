@@ -14,14 +14,6 @@ path_dir = pathlib.Path('logs')
 path_dir.mkdir(exist_ok=True)
 
 
-logging.basicConfig(
-    filename= path_dir/ "historial.log",
-    level= logging.INFO,
-    format='%(asctime)s %(levelname)s %(name)s – %(message)s',
-    datefmt='%H:%M:%S'
-)
-
-logger = logging.getLogger()
 
 class TestJSONPlaceholder:
 
@@ -48,7 +40,6 @@ class TestJSONPlaceholder:
 
         logger.info("Validar estructura de datos")
         assert isinstance(data, list)
-
         assert len(data) > 0
         print(f"✅Estructura Json correcta")
         logger.info("Estructura Json correcta")
@@ -60,7 +51,6 @@ class TestJSONPlaceholder:
             assert field in first_post, f"Falta el campo {field} en el post"
         print("✅Estructura del primer post es correcta")
         logger.info("✅Estructura del primer post es correcta")
-
         logger.info("Validar tipos de datos")
         assert isinstance(first_post['userId'], int), "userId debe ser un entero"
         assert isinstance(first_post['id'], int), "id debe ser un entero"
@@ -68,15 +58,14 @@ class TestJSONPlaceholder:
         assert isinstance(first_post['body'], str), "body debe ser una cadena"
         print("Tipos de datos del primer post son correctos")
         logger.info("✅Tipos de datos del primer post son correctos")
-
         
         print("🎉 Test GET Posts completado exitosamente!")
         logger.info("🎉 Test GET Posts completado exitosamente!")
         print("\n")
 
         logger.info("TEST 2 - POST - Crear un nuevo post")
-        def test_create_post_success(self):
-            logger.info("POST /posts - Crear un nuevo post exitosamente")
+    def test_create_post_success(self):
+        logger.info("POST /posts - Crear un nuevo post exitosamente")
         print("\n=== Test 2: CREATE Post ===")
         
         logger.info("Datos para crear el post")
@@ -104,7 +93,6 @@ class TestJSONPlaceholder:
             assert field in data, f"Falta el campo {field} en la respuesta"
         print("✅ Estructura JSON correcta")
         logger.info("✅ Estructura JSON correcta")
-
         logger.info("Validar valores devueltos")
         assert data["title"] == post_data["title"], "El título no coincide"
         assert data["body"] == post_data["body"], "El cuerpo no coincide"
@@ -114,11 +102,10 @@ class TestJSONPlaceholder:
         print("🎉 Test CREATE Post completado exitosamente!")
         logger.info("🎉 Test CREATE Post completado exitosamente!")
         print("\n")
-
         logger.info("TEST 3 - PUT - Actualizar un post existente")
-        def test_update_post_success(self):
-            logger.info("PUT /posts/{id} - Actualizar un post existente exitosamente")
-            print("\n=== Test 3: UPDATE Post ===")
+    def test_update_post_success(self):
+        logger.info("PUT /posts/{id} - Actualizar un post existente exitosamente")
+        print("\n=== Test 3: UPDATE Post ===")
         
         logger.info("ID del post a actualizar")
         post_id = 1
@@ -148,7 +135,6 @@ class TestJSONPlaceholder:
             assert field in data, f"Falta el campo {field} en la respuesta"
         print("✅ Estructura JSON correcta")
         logger.info("✅ Estructura JSON correcta")
-
         logger.info("Validar valores devueltos")
         assert data["title"] == update_data["title"], "El título no coincide"
         assert data["body"] == update_data["body"], "El cuerpo no coincide"

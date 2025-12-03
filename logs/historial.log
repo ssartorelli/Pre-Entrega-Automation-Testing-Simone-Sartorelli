@@ -1,3 +1,66 @@
-INFO:root:Configuracion del logger
-INFO:root:Pruebas para la API JSONPlaceholder
-INFO:root:TEST 1 - GET - Obtener todos los posts
+21:04:45 INFO root – Configuracion del logger
+21:04:45 INFO root – Pruebas para la API JSONPlaceholder
+21:04:45 INFO root – TEST 1 - GET - Obtener todos los posts
+21:04:45 INFO root – 
+=== Test 1: GET Posts ===
+21:04:45 INFO root – Peticion GET
+21:04:45 INFO root – Validar código de estado
+21:04:45 INFO root – \u2705 Código de estado 200 - OK
+21:04:45 INFO root – Convertir a JSON
+21:04:45 INFO root – Validar estructura de datos
+21:04:45 INFO root – Estructura Json correcta
+21:04:45 INFO root – Validar estructura del primero post
+21:04:45 INFO root – \u2705Estructura del primer post es correcta
+21:04:45 INFO root – Validar tipos de datos
+21:04:45 INFO root – \u2705Tipos de datos del primer post son correctos
+21:04:45 INFO root – \U0001f389 Test GET Posts completado exitosamente!
+21:04:45 INFO root – TEST 2 - POST - Crear un nuevo post
+21:04:45 INFO root – POST /posts - Crear un nuevo post exitosamente
+21:04:45 INFO root – Datos para crear el post
+21:04:45 INFO root – PUT /posts/{id} - Actualizar un post existente exitosamente
+21:04:45 INFO root – ID del post a actualizar
+21:04:45 INFO root – Datos para actualizar el post
+21:05:11 INFO root – Configuracion del logger
+21:05:11 INFO root – Pruebas para la API JSONPlaceholder
+21:05:11 INFO root – TEST 1 - GET - Obtener todos los posts
+21:05:11 INFO root – 
+=== Test 1: GET Posts ===
+21:05:11 INFO root – Peticion GET
+21:05:11 INFO root – Validar código de estado
+21:05:11 INFO root – \u2705 Código de estado 200 - OK
+21:05:11 INFO root – Convertir a JSON
+21:05:11 INFO root – Validar estructura de datos
+21:05:11 INFO root – Estructura Json correcta
+21:05:11 INFO root – Validar estructura del primero post
+21:05:11 INFO root – \u2705Estructura del primer post es correcta
+21:05:11 INFO root – Validar tipos de datos
+21:05:11 INFO root – \u2705Tipos de datos del primer post son correctos
+21:05:11 INFO root – \U0001f389 Test GET Posts completado exitosamente!
+21:05:11 INFO root – TEST 2 - POST - Crear un nuevo post
+21:05:11 INFO root – POST /posts - Crear un nuevo post exitosamente
+21:05:11 INFO root – Datos para crear el post
+21:05:11 INFO root – PUT /posts/{id} - Actualizar un post existente exitosamente
+21:05:11 INFO root – ID del post a actualizar
+21:05:11 INFO root – Datos para actualizar el post
+21:25:47 INFO root – Configuracion del logger
+21:25:47 INFO root – Pruebas para la API JSONPlaceholder
+21:25:47 INFO root – TEST 1 - GET - Obtener todos los posts
+21:25:47 INFO root – 
+=== Test 1: GET Posts ===
+21:25:47 INFO root – Peticion GET
+21:25:47 INFO root – Validar código de estado
+21:25:47 INFO root – \u2705 Código de estado 200 - OK
+21:25:47 INFO root – Convertir a JSON
+21:25:47 INFO root – Validar estructura de datos
+21:25:47 INFO root – Estructura Json correcta
+21:25:47 INFO root – Validar estructura del primero post
+21:25:47 INFO root – \u2705Estructura del primer post es correcta
+21:25:47 INFO root – Validar tipos de datos
+21:25:47 INFO root – \u2705Tipos de datos del primer post son correctos
+21:25:47 INFO root – \U0001f389 Test GET Posts completado exitosamente!
+21:25:47 INFO root – TEST 2 - POST - Crear un nuevo post
+21:25:47 INFO root – POST /posts - Crear un nuevo post exitosamente
+21:25:47 INFO root – Datos para crear el post
+21:25:48 INFO root – PUT /posts/{id} - Actualizar un post existente exitosamente
+21:25:48 INFO root – ID del post a actualizar
+21:25:48 INFO root – Datos para actualizar el post
