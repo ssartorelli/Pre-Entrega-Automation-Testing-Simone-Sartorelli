@@ -48,23 +48,7 @@ Garantizar la Mantenibilidad: Implementar el patrón de diseño Page Object Mode
 ##Estructura del Proyecto##
 **El código está organizado siguiendo el patrón Page Object Model (POM) y una estructura modular para mantener la lógica separada y el código limpio.**
 
-**Framework_Automatizacion/**
-├── pages/                  # Contiene las clases Page Object Model (POM) para la UI.
-│   ├── login_page.py
-│   └── product_page.py
-├── tests/                  # Contiene los archivos de prueba que usan Pytest.
-│   ├── test_ui_flows.py    # Pruebas de UI (Selenium)
-│   └── test_api_calls.py   # Pruebas de API (Requests)
-├── utils/                  # Módulos de utilidad y soporte.
-│   ├── data_reader.py      # Lógica para leer archivos CSV/JSON.
-│   └── logger_setup.py     # Configuración del sistema de logging.
-├── data/                   # Archivos de datos externos (JSON, CSV).
-│   └── test_users.csv
-├── reports/                # Directorio donde se almacenan los reportes generados.
-├── screenshots/            # Directorio para las capturas de pantalla de fallas.
-├── conftest.py             # Hooks y fixtures de Pytest (ej. inicialización del driver).
-├── requirements.txt        # Lista de dependencias del proyecto.
-└── README.md
+
 
 
 ##Instruccion de instalacion de dependencias##
