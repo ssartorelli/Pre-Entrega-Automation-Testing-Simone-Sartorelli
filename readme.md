@@ -54,6 +54,9 @@ Garantizar la Mantenibilidad: Implementar el patrón de diseño Page Object Mode
 ##Instruccion de instalacion de dependencias##
 
 **Pip install selenium**
+**Pip install pytest-html**
+**pip install requires** 
+**pip install faker**
 
 
 ##Comandos para ejecucion de pruebas##
@@ -67,3 +70,4 @@ pytest -v --html=reporte.html**
 pytest install -r requiments.txt
 
 pytest freeze > requirements.txt
+

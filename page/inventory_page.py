@@ -4,18 +4,26 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+"""Page object para la página de inventario.
+
+Contiene locators y acciones para interactuar con la lista de productos.
+"""
 
 class InventoryPage:
 
+    # Ruta esperada para identificar la página de inventario
     URL_CURRENT = "/inventory.html"
-    MENU_BUTTON= (By.ID, "react-burger-menu-btn")
-    LINK_BUTTON = (By.ID, "logout_sidebar_link")
-    ADD_TO_CART_BUTTONS = (By.XPATH, "//button[contains(text(), 'Add to cart')]")
-    CART_LINK = (By.CLASS_NAME, "shopping_cart_link")
-    CART_BADGE = (By.CLASS_NAME, "shopping_cart_badge")
+
+    # Localizadores (By, selector)
+    MENU_BUTTON = (By.ID, "react-burger-menu-btn")  # botón del menú hamburguesa
+    LINK_BUTTON = (By.ID, "logout_sidebar_link")   # enlace de logout en el sidebar
+    ADD_TO_CART_BUTTONS = (By.XPATH, "//button[contains(text(), 'Add to cart')]")  # botones 'Add to cart'
+    CART_LINK = (By.CLASS_NAME, "shopping_cart_link")  # enlace/icono del carrito
+    CART_BADGE = (By.CLASS_NAME, "shopping_cart_badge")  # badge con la cantidad de items
 
     def __init__(self, driver):
-        self.driver = driver    
+        # WebDriver provisto por fixture
+        self.driver = driver
 
     def is_at_page(self):
         return self.URL_CURRENT in self.driver.current_url
